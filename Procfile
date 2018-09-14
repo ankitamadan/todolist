@@ -1,0 +1,1 @@
+web: java -jar target/todoapp-0.0.1-SNAPSHOT.jar -Xms1024M -Xmx1024M
