@@ -1,0 +1,24 @@
+<div class="row justify-content-md-center">
+		<ul class="list-group">
+			<li class="list-group-item list-group-item-action" *ngFor="let item of items" >
+
+			      <span>{{item.name}}</span>
+			      <div class="pull-right">
+			          <button class="btn btn-danger btn-xs fa fa-trash-o" (click)="onRemove(item.name)"></button>
+			      </div>
+			</li>
+
+		</ul>
+</div>
+
+<div class="row justify-content-md-center">
+		<nav>
+			<a routerLink="/new-item" class="pull-right">New item</a>
+		</nav>
+</div>
+
+
+<div class="my-container">
+  <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '15px' }"></ngx-loading>
+</div>
+

@@ -1,0 +1,16 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="newItemForm">
+
+  <div class="form-group">
+    <label for="itemName">Item name</label>
+    <input type="text" style="margin-left: 655px; max-width: 200px;" formControlName="name" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-primary" type="submit">Save</button>
+    <a routerLink="/home" class="btn btn-link">Cancel</a>
+  </div>
+
+  <div class="my-container">
+    <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '15px' }"></ngx-loading>
+  </div>
+</form>
